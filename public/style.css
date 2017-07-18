@@ -1,5 +1,17 @@
-@import url('whitespace-reset.css');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Permanent+Marker');
+
+/* adapted from: http://pageaffairs.com/notebook/containing-floats/ */
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: block;
+  float: left;
+}
+
+.clearfix {
+  display: inline-block;
+}
 
 html, body {
   height: 100%;
@@ -16,7 +28,6 @@ body {
 #container {
   background-color: black;
   width: 100%;
-  height: 100%;
   padding: 40px;
   box-sizing: border-box;
 }
